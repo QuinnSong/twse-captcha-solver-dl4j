@@ -103,7 +103,7 @@ public class CaptchaLoader extends NativeImageLoader implements Serializable {
     INDArray[] featuresMask = null;
     INDArray[] labelMask = null;
 
-    List<MultiDataSet> multiDataSets = new ArrayList<>();
+    List<MultiDataSet> multiDataSets = new ArrayList<MultiDataSet>();
 
     while (batchNumCount != num && fileIterator.hasNext()) {
       File image = fileIterator.next();

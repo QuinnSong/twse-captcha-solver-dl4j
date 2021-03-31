@@ -47,7 +47,7 @@ public class CaptchaSetIterator implements MultiDataSetIterator {
     numExample = load.totalExamples();
   }
 
-  @Override
+  //@Override
   public MultiDataSet next(int i) {
     batchNum += i;
     MultiDataSet mds = load.next(i);
@@ -57,33 +57,33 @@ public class CaptchaSetIterator implements MultiDataSetIterator {
     return mds;
   }
 
-  @Override
+  //@Override
   public void setPreProcessor(MultiDataSetPreProcessor multiDataSetPreProcessor) {
     this.preProcessor = preProcessor;
   }
 
-  @Override
+  //@Override
   public MultiDataSetPreProcessor getPreProcessor() {
     return preProcessor;
   }
 
-  @Override
+  //@Override
   public boolean resetSupported() {
     return true;
   }
 
-  @Override
+  //@Override
   public boolean asyncSupported() {
     return true;
   }
 
-  @Override
+  //@Override
   public void reset() {
     batchNum = 0;
     load.reset();
   }
 
-  @Override
+  //@Override
   public boolean hasNext() {
     if (batchNum < numExample) {
       return true;
@@ -92,7 +92,7 @@ public class CaptchaSetIterator implements MultiDataSetIterator {
     }
   }
 
-  @Override
+  //@Override
   public MultiDataSet next() {
     return next(batchSize);
   }

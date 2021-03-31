@@ -1,0 +1,99 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>twse-captcha-solver-dl4j</groupId>
+  <artifactId>twse-captcha-solver-dl4j</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>twse</name>
+  <description>captcha solver</description>
+  <build>
+    <sourceDirectory>twse-captcha-downloader/src/main/java</sourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.5.1</version>
+        <configuration>
+          <source/>
+          <target/>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+<dependencies>
+<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+	<dependency>
+	    <groupId>org.slf4j</groupId>
+	    <artifactId>slf4j-api</artifactId>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.nd4j/nd4j-api -->
+	<dependency>
+	    <groupId>org.nd4j</groupId>
+	    <artifactId>nd4j-api</artifactId>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.datavec/datavec-api -->
+	<dependency>
+	    <groupId>org.datavec</groupId>
+	    <artifactId>datavec-api</artifactId>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.deeplearning4j/deeplearning4j-nn -->
+	<dependency>
+	    <groupId>org.deeplearning4j</groupId>
+	    <artifactId>deeplearning4j-nn</artifactId>
+	</dependency>
+	<dependency>
+		<groupId>org.deeplearning4j</groupId>
+		<artifactId>deeplearning4j-core</artifactId>
+	</dependency>
+	<dependency>
+		<groupId>org.datavec</groupId>
+		<artifactId>datavec-data-image</artifactId>
+	</dependency>
+	<dependency>
+		<groupId>org.deeplearning4j</groupId>
+		<artifactId>deeplearning4j-ui_2.11</artifactId>
+	</dependency>
+</dependencies>
+<dependencyManagement>
+  	<dependencies>
+  		<dependency>
+  			<groupId>org.slf4j</groupId>
+  			<artifactId>slf4j</artifactId>
+  			<version>1.7.30</version>
+  		</dependency>
+  		<dependency>
+  			<groupId>org.slf4j</groupId>
+  			<artifactId>slf4j-api</artifactId>
+  			<version>1.6.6</version>
+  		</dependency>
+  		<dependency>
+  			<groupId>org.nd4j</groupId>
+  			<artifactId>nd4j-api</artifactId>
+  			<version>0.9.1</version>
+  		</dependency>
+  		<dependency>
+  			<groupId>org.datavec</groupId>
+  			<artifactId>datavec-api</artifactId>
+  			<version>0.9.1</version>
+  		</dependency>
+  		<dependency>
+  			<groupId>org.deeplearning4j</groupId>
+  			<artifactId>deeplearning4j-nn</artifactId>
+  			<version>0.9.1</version>
+  		</dependency>
+		<dependency>
+            <groupId>org.datavec</groupId>
+            <artifactId>datavec-data-image</artifactId>
+            <version>0.9.1</version>
+        </dependency>
+        <dependency>
+		    <groupId>org.deeplearning4j</groupId>
+		    <artifactId>deeplearning4j-core</artifactId>
+		    <version>0.9.1</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.deeplearning4j</groupId>
+		    <artifactId>deeplearning4j-ui_2.11</artifactId>
+		    <version>0.9.1</version>
+		</dependency>
+  	</dependencies>
+  </dependencyManagement>
+</project>

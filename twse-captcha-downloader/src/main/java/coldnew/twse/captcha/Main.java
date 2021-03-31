@@ -34,7 +34,7 @@ import org.slf4j.LoggerFactory;
 class Main {
 
     public static void main(String[] args) {
-        Logger logger = LoggerFactory.getLogger(Main.class);
+        Logger logger = LoggerFactory.getLogger(Man.class);
         logger.info("Starting twse captcha downloader ...");
 
         File saveDir =new File(System.getProperty("user.dir") + File.separator + "download");

@@ -56,9 +56,9 @@ import org.nd4j.linalg.lossfunctions.LossFunctions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-class Main {
+class Man {
 
-  private static final Logger logger = LoggerFactory.getLogger(Main.class);
+  private static final Logger logger = LoggerFactory.getLogger(Man.class);
 
   private static long seed = 123;
   private static int epochs = 50;
@@ -114,7 +114,7 @@ class Main {
             .seed(seed)
             .gradientNormalization(GradientNormalization.RenormalizeL2PerLayer)
             .l2(1e-3)
-            .updater(new Adam(1e-3))
+            .updater(new Adam(1.0, 0.5, 0.5, 1e-8))
             .weightInit(WeightInit.XAVIER_UNIFORM)
             .graphBuilder()
             .addInputs("trainFeatures")
@@ -253,7 +253,7 @@ class Main {
         }
         sumCount++;
         logger.info(
-            "real image {}  prediction {} status {}", reLabel, peLabel, peLabel.equals(reLabel));
+            String.format("real image {}  prediction {} status {}", reLabel, peLabel, peLabel.equals(reLabel)));
       }
     }
     iterator.reset();
